@@ -14,35 +14,42 @@ const Portfolio = () => {
     {
       id: 1,
       src: project1,
-      link: "https://m-zani.netlify.app"
+      link: "https://m-zani.netlify.app",
+      github: "https://github.com/EmekaManuel/zani-store"
     },
     {
       id: 2,
       src: project2,
-      link: "https://aje-luxury.netlify.app"
+      link: "https://aje-luxury.netlify.app",
+      github: "https://github.com/EmekaManuel/aje-luxury"
 
     },
     {
       id: 3,
       src: project3,
-      link: "https://transl-x.netlify.app"
+      link: "https://transl-x.netlify.app",
+      github: "https://github.com/EmekaManuel/transl-x"
 
     },
     {
       id: 4,
       src: project4,
-      link: "https://satoshi-check.netlify.app"
+      link: "https://satoshi-check.netlify.app",
+      github: "https://github.com/EmekaManuel/satoshi-check"
 
     },
     {
       id: 5,
       src: project5,
-      link: "https://m-zani.netlify.app"
+      link: "https://m-zani.netlify.app",
+      github: ""
 
     },
     {
       id: 6,
       src: project6,
+      link: "",
+      github: ""
     },
   ];
 
@@ -66,7 +73,7 @@ const Portfolio = () => {
         <div className="" >
           
         <div className="grid grid-cols-1 w-full gap-y-8 items md:grid-cols-3 gap-x-3">
-          {portfolioItems.map(({ id, src, link }) => (
+          {portfolioItems.map(({ id, src, link, github }) => (
             <div key={id} className="shadow-md shadow-gray-400 rounded-lg">
               <img
                 src={src}
@@ -80,9 +87,12 @@ const Portfolio = () => {
                   Demo
                 </button>
                 </a>
+                <a href={github}>
+
                 <button className="w-1/2 px-4 py-1 m-2 duration-200">
                   Code
                 </button>
+                </a>
               </div>
             </div>
           ))}

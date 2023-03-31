@@ -78,18 +78,20 @@ const Home = () => {
               </Link>
             </div>
             <div>
-              <Link
-                to="portfolio"
+              <a href="https://docs.google.com/document/d/1v-C_gxBOnOC6__6iezYt494SFay8erOj_T-_HGeJ55U/edit?usp=sharing">
+
+              <div
                 smooth
                 duration={600}
                 className="group text-white w-fit px-4 py-2 my-2 flex items-center rounded-md 
-                    bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
-              >
+                bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+                >
                 View Resume
                 <span className="group-hover:rotate-90 ">
                   <MdOutlineKeyboardArrowRight className="ml-1" />
                 </span>
-              </Link>
+              </div>
+                </a>
             </div>
           </motion.div>
         </div>
