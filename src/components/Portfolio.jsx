@@ -12,95 +12,95 @@ import project6 from "../assets/portfolio/nodeaid.png";
 const Portfolio = () => {
   const portfolioItems = [
     {
+      name: "M-zani",
+      description: "hello world hello world",
       id: 1,
-      src: project1,
-      link: "https://m-zani.netlify.app",
+      image: project1,
+      demoLink: "https://m-zani.netlify.app",
       github: "https://github.com/EmekaManuel/zani-store"
     },
     {
+      name: "Aje Luxury",
+      description: "hello world hello world",
       id: 2,
-      src: project2,
-      link: "https://aje-luxury.netlify.app",
+      image: project2,
+      demoLink: "https://aje-luxury.netlify.app",
       github: "https://github.com/EmekaManuel/aje-luxury"
 
     },
     {
+      name: "Transl-x",
+      description: "hello world hello world",
       id: 3,
-      src: project3,
-      link: "https://transl-x.netlify.app",
+      image: project3,
+      demoLink: "https://transl-x.netlify.app",
       github: "https://github.com/EmekaManuel/transl-x"
 
     },
     {
+      name: "Satoshi-Check",
+      description: "hello world hello world",
       id: 4,
-      src: project4,
-      link: "https://satoshi-check.netlify.app",
+      image: project4,
+      demoLink: "https://satoshi-check.netlify.app",
       github: "https://github.com/EmekaManuel/satoshi-check"
 
     },
     {
+      name: "Watch It",
+      description: "hello world hello world",
       id: 5,
-      src: project5,
-      link: "https://m-zani.netlify.app",
-      github: ""
+      image: project5,
+      demoLink: "https://m-zani.netlify.app",
+      github: "hello world hello world"
 
     },
     {
+      name: "hello world hello world",
+      description: "hello world hello world",
       id: 6,
-      src: project6,
-      link: "",
-      github: ""
+      image: project6,
+      demoLink: "hello world hello world",
+      github: "hello world hello world"
     },
   ];
 
   return (
-    <div
-      name="portfolio"
-      className="bg-gradient-to-b from-gray-800 to-black text-white h-full w-full "
-    >
-      <div
-        className="max-w-screen-lg px-4 md:h-screen h-full mx-auto grid grid-cols-1 md:flex md:flex-col justify-center w-full"
-        >
-        <div className="pb-4">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            Portfolio
-          </p>
-          <p className="py-6">
-            Here are some of the projects I have worked on.
-          </p>
-        </div>
-
-        <div className="" >
-          
-        <div className="grid grid-cols-1 w-full gap-y-8 items md:grid-cols-3 gap-x-3">
-          {portfolioItems.map(({ id, src, link, github }) => (
-            <div key={id} className="shadow-md shadow-gray-400 rounded-lg">
-              <img
-                src={src}
-                alt=""
-                srcset=""
-                className="rounded-md duration-200"
-              />
-              <div className="flex items-center justify-center">
-                <a href={link}>
-                <button className="w-1/2 px-4 py-1 m-2 duration-200">
-                  Demo
-                </button>
-                </a>
-                <a href={github}>
-
-                <button className="w-1/2 px-4 py-1 m-2 duration-200">
-                  Code
-                </button>
-                </a>
-              </div>
+    <div className="bg-gradient-to-b sm:px-5 from-gray-800 to-black text-white md:min-h-screen py-12">
+    <div className="max-w-screen-lg px-4 mx-auto">
+      <div className="pb-4">
+        <h2 className="text-4xl font-bold mb-4">Portfolio</h2>
+        <p className="text-lg">Here are some of the projects I have worked on.</p>
+      </div>
+      
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+        {portfolioItems.map(({ id, name, description, image, demoLink, github }) => (
+        <div key={id}>
+          <div className="relative
+           overflow-hidden">
+            <img src={image} alt={name} className="w-full" />
+            <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-black hover:bg-opacity-50 p-2 flex flex-col justify-end">
+              <div className="text-[16px] w-fit py-[5px] px-[5px] rounded-md text-black bg-slate-100 font-normal mb-1">{name}</div>
             </div>
-          ))}
+          </div>
+          <div className="flex bg-slate-900 justify-center p-2 rounded-b-md ">
+                  <a href={demoLink} target="_blank" rel="noopener noreferrer" className="flex-1">
+                    <button className="w-full h-full py-2 text-white rounded-lg transition-colors duration-300 hover:bg-blue-700 focus:outline-none">
+                      Demo
+                    </button>
+                  </a>
+                  <a href={github} target="_blank" rel="noopener noreferrer" className="flex-1 ml-2">
+                    <button className="w-full py-2 px-4 text-white rounded-lg transition-colors duration-300 hover:bg-slate-600 focus:outline-none">
+                      Code
+                    </button>
+                  </a>
+                </div>
+            
         </div>
-        </div>
-
+        ))}
       </div>
     </div>
+  </div>
   );
 };
 

@@ -19,25 +19,24 @@ const About = () => {
         </div>
 
         <p className="text-sm md:text-lg mt-3 text-gray-100">
-          {" "}
           My name is Emeka Manuel. I am a Front-end (React) Developer and
           Technical Writer.{" "}
         </p>
-        <p className="text-sm md:text-lg text-gray-100">
+        <p className="text-sm md:text-lg mt-3 text-gray-100">
           My skills are mainly focused on front-end web technologies which
-          include HTML, CSS, JavaScript, React, Next, Redux, Node and Express Js.
+          include HTML, CSS, JavaScript, React, Next, Redux, Prisma, MongoDb Node and Express Js.
           <p className="text-sm md:text-lg mt-3 text-gray-100">
             I also possess good technical writing proficiency which I use as a
             tool to convey my thoughts to the developers community. You can
             check out some of my{" "}
-            <a href="#m" className="border-b-2 border-blue-300">
+            <a href="https://marrnuel.hashnode.dev/" className="border-b-2 border-blue-300">
               articles here
             </a>
             .
           </p>
           <p className="mt-3 text-sm md:text-lg text-gray-100">
             Additionally, I have a solid experience with Version-Control -
-            Git/Github, SSR, Scrum / Agile methodologies, SEO optimization, CI /
+            Git/Github, SSR, Scrum / Kanban / Agile methodologies, SEO optimization, CI /
             CD as a plus.
           </p>
           <p className="mt-3 text-sm md:text-lg text-gray-100">
